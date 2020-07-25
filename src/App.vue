@@ -8,6 +8,11 @@
   </div>
 </template>
 
+<script>
+import 'focus-visible'
+export default {}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -26,5 +31,9 @@
       color: #42b983;
     }
   }
+}
+
+[data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+  outline: none;
 }
 </style>
